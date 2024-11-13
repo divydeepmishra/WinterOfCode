@@ -3,94 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medium</title>
+    <title>Medium Clone</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
         }
-        header {
-            size: 2;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin: 0;
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333;
         }
-        .header {
-            background-color: #fff;
-            border-bottom: 1px solid #e5e5e5;
-            padding: 10px 20px;
+
+        header {
             display: flex;
-            
             justify-content: space-between;
             align-items: center;
+            padding: 25px 200px 25px 200px;
+            border-bottom: 1px solid black;
         }
-        .header a {
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+
+        nav a {
+            margin-left: 10px;
             text-decoration: none;
-            color: #000000;
-            margin: 0 10px;
-            
+            color: #333333;
         }
-        .main {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .main h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        .main p {
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 30px;
-        }
-        .main button {
-            padding: 10px 20px;
-            font-size: 1em;
-            background-color: #036d1a;
-            color: #fff;
+
+        .buttn {
+            background-color: black;
+            color: white;
+            padding: 8px 16px;
             border: none;
-            border-radius: 25px;
+            border-radius: 20px;
             cursor: pointer;
+            margin-left: 10px;
         }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 120px;
+            padding-left: 150px;
+            padding-bottom: 100px;
+            background-image: url('https://miro.medium.com/v2/format:webp/4*SdjkdS98aKH76I8eD0_qjw.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        main h1 {
+            font-size: 85px;
+            line-height: 1.2;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        main p {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 40px;
+        }
+
+        .read {
+            background-color: black;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
         footer {
-            background-color: #f5f5f5;
-            padding: 20px;
-            text-align: center;
             display: flex;
             justify-content: center;
+            padding: 30px;
+            font-size: small;
+            color: #333333;
+            border-top: 1px solid #333333;
         }
+
         footer a {
-            text-decoration: none;
-            color: #000;
             margin: 0 10px;
-            
+            text-decoration: none;
+            color: #666666;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <header><a href="#">Medium</a></header>
-        </div>
-        <div class="nav">
-            <a href="#">Our Story</a>
+    <header>
+        <div class="logo">Medium</div>
+        <nav>
+            <a href="#">Our story</a>
             <a href="#">Membership</a>
             <a href="#">Write</a>
-            <a href="#">Sign In</a>
-            
+            <a href="#">Sign in</a>
+            <button class="buttn">Get started</button>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Human<br>stories & ideas</h1>
+            <p>A place to read, write, and deepen your understanding</p>
+            <button class="read">Start reading</button>
         </div>
-    </div>
-    <div class="main">
-        <h1>Welcome to Medium</h1>
-        <p>Discover stories, thinking, and expertise from writers on any topic.</p>
-        <button>Get Started</button>
-    </div>
+    </main>
     <footer>
-        <a href="#">About</a>
         <a href="#">Help</a>
-        <a href="#">Legal</a>
+        <a href="#">Status</a>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Text to speech</a>
+        <a href="#">Teams</a>
     </footer>
+
 </body>
 </html>
