@@ -3,6 +3,8 @@
 // }
 // console.log('Hello World!');
 
+
+
 // var name = 'John';
 // {
 //     let name = 'Jane';
@@ -10,10 +12,14 @@
 // }
 // console.log(name); // John
 
+
+
 // let mentor = 'Michael';
 // const student = 'Jane';
-
 // const pi = 3.14159;
+
+
+
 
 // let data1 = 10;
 // let data2 = 'hello';
@@ -23,8 +29,6 @@
 // let data6 = 60;
 // let data7 = 70;
 // let data8 = 80;
-
-
 // console.log(data1);
 // console.log(data2);
 // console.log(data3);
@@ -44,6 +48,9 @@
 // console.log(a || b); // one must be true to return true
 // console.log(!a); // returns opposite of the value
 
+
+
+
 // let temp = 45;
 // if (temp < 20) {
 //     console.log('It is cold outside');
@@ -56,6 +63,8 @@
 // }
 
 
+
+
 // let bill = 192;
 // if (bill < 100) {
 //     console.log(5*bill);
@@ -66,6 +75,7 @@
 // else {
 //     console.log(5*100 + 7*(200-100) + 10*(bill-200));
 // }
+
 
 
 
@@ -99,6 +109,8 @@
 // }
 
 
+
+
 // for (let i = 0; i < 5; i++) {
 //     console.log('This is ' + i);
 // }
@@ -116,6 +128,9 @@
 //     console.log(count);
 //     count++;
 // }
+
+
+
 
 // do {
 //     console.log(count);
@@ -187,14 +202,71 @@
 // person.greet();
 
 
-let divy = {
-    name: 'Divy',
-    age: 20,
-    university: 'Lovely Professional University',
-    data: {
-        city: 'Jalandhar',
-        country: 'India'
+// let divy = {
+//     name: 'Divy',
+//     age: 20,
+//     university: 'Lovely Professional University',
+//     data: {
+//         city: 'Jalandhar',
+//         country: 'India'
         
-    }
-}
-console.log(divy.name,age);
+//     }
+// }
+// console.log(divy.name,age);
+
+
+
+// let fruits = ['apple', 'banana', 'mango', 'orange'];
+// console.log(fruits);
+// console.log(fruits[0]);
+
+
+
+
+// let student = ['Divy', 'John', 'Jane', 'Michael'];
+// console.log(student);
+// console.log(student.length);
+// console.log(student[1]);
+// student.push('Doe');
+// console.log(student);
+// student.pop();
+// console.log(student);
+// student.shift(); 
+// console.log(student);
+// student.unshift('Divy');
+// console.log(student);
+// student.splice(1, 1);
+// console.log(student);
+// student.unshift('Doe');
+// console.log(student);
+// student.splice(1, 0, 'John');
+// console.log(student);
+// student.splice(2, 1, 'Jane');
+// console.log(student);
+// student[2] = 'Tony'; 
+// console.log(student);
+
+
+
+
+
+// let even = [2, 4, 6, 8, 10];
+// console.log(even.map(x => x * 2));
+// console.log(even.filter(x => x > 5));
+// console.log(even.reduce((acc, x) => acc + x, 0));
+
+
+
+
+let numbers = [1, 2, 3, 4, 5, 6 ,7, 8 , 9 , 10];
+// let even = numbers.filter(x => x % 2 == 0);
+// console.log(even);
+// let square = numbers.map(x => x * x);
+// console.log(square);
+// let sum = numbers.reduce((acc, x) => acc + x, 0);
+// console.log(sum);
+
+let sum = numbers.reduce((acc, x) => acc + x, 10);
+console.log(sum);
+
+
