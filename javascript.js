@@ -377,6 +377,4 @@
 
 
 // let greet = "Hello";
-// console.log([...greet]);
-
-
+// console.log([...greet]) // ["H", "e", "l", "l", "o"]
