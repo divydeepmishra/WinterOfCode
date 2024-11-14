@@ -258,15 +258,125 @@
 
 
 
-let numbers = [1, 2, 3, 4, 5, 6 ,7, 8 , 9 , 10];
+//let numbers = [1, 2, 3, 4, 5, 6 ,7, 8 , 9 , 10];
 // let even = numbers.filter(x => x % 2 == 0);
 // console.log(even);
 // let square = numbers.map(x => x * x);
 // console.log(square);
 // let sum = numbers.reduce((acc, x) => acc + x, 0);
 // console.log(sum);
+// let sum = numbers.reduce((acc, x) => acc + x, 10);
+// console.log(sum);
+// numbers.forEach(x => console.log(x));
 
-let sum = numbers.reduce((acc, x) => acc + x, 10);
-console.log(sum);
+
+// let num1 = [1, 2, 3];
+// let num2 = [4, 5, 6];
+// let num3 = num1.concat(num2);
+// console.log(num3);
+
+
+// function findExample(arr) {
+//     return arr.filter(x => x > 5);
+// }
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(findExample(numbers));
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let value = numbers.find(x => x > 5);
+// console.log(value);
+
+
+//let numbers = [1, 25, 34, 48, 58, 61, 70, 83, 9, 0];
+//et value = numbers.sort((a, b) => a - b);
+// console.log(value); // print in ascending order
+// let value = numbers.sort((a, b) => b - a);
+// console.log(value); // print in descending order
+
+
+
+//objects
+// let person = {
+//     name: 'Divy',
+//     age: 20,
+//     location: 'Lovely Professional University',
+//     data: {
+//         city: 'Jalandhar',
+//         country: 'India'
+//     }
+// }
+// console.log(person);
+// console.log(person.name);
+// console.log(person.age);
+// console.log(person.data.city);
+// console.log(person.data.country);
+// person.age = 21;
+// console.log(person.age);
+
+
+
+
+// Object Methods Explanation
+// function objectMethods(obj) {
+//     console.log("Original Object:", obj);
+
+//     let keys = Object.keys(obj);
+//     console.log("After Object.keys():", keys);
+
+//     let values = Object.values(obj);
+//     console.log("After Object.values():", values);
+
+//     let entries = Object.entries(obj);
+//     console.log("After Object.entries():", entries);
+
+//     let hasProp = obj.hasOwnProperty("property");
+//     console.log("After hasOwnProperty():", hasProp);
+
+//     let newObj = Object.assign({}, obj, { newProperty: "newValue" });
+//     console.log("After Object.assign():", newObj);
+
+
+//   }
+
+//   // Example Usage for Object Methods
+//   const sampleObject = {
+//     key1: "value1",
+//     key2: "value2",
+//     key3: "value3",
+//   };
+//   objectMethods(sampleObject);
+
+
+// let student = ['Divy', 'John', 'Jane', 'Michael'];
+// let [first, second, third, fourth] = student;
+// console.log(first);
+// console.log(first,second);
+
+
+
+
+// let book = {
+//     title: 'JavaScript',
+//     author: 'John Doe',
+//     publisher: 'Pearson',
+//     year: 2021,
+// }
+// let {title, author, publisher, year} = book;
+// console.log(title);
+
+
+
+
+//...spread operator
+// let num1 = [1, 2, 3, 4, 5];
+// let num2 = [6, 7, 8, 9, 10];
+// let combined = [...num1, ...num2];
+// console.log(combined);
+
+
+
+// let greet = "Hello";
+// console.log([...greet]);
 
 
