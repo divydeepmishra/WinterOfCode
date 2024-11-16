@@ -258,7 +258,7 @@
 
 
 
-//let numbers = [1, 2, 3, 4, 5, 6 ,7, 8 , 9 , 10];
+// let numbers = [1, 2, 3, 4, 5, 6 ,7, 8 , 9 , 10];
 // let even = numbers.filter(x => x % 2 == 0);
 // console.log(even);
 // let square = numbers.map(x => x * x);
@@ -288,15 +288,15 @@
 // console.log(value);
 
 
-//let numbers = [1, 25, 34, 48, 58, 61, 70, 83, 9, 0];
-//et value = numbers.sort((a, b) => a - b);
+// let numbers = [1, 25, 34, 48, 58, 61, 70, 83, 9, 0];
+// et value = numbers.sort((a, b) => a - b);
 // console.log(value); // print in ascending order
 // let value = numbers.sort((a, b) => b - a);
 // console.log(value); // print in descending order
 
 
 
-//objects
+// objects
 // let person = {
 //     name: 'Divy',
 //     age: 20,
@@ -368,13 +368,104 @@
 
 
 
-//...spread operator
+// //spread operator
 // let num1 = [1, 2, 3, 4, 5];
 // let num2 = [6, 7, 8, 9, 10];
 // let combined = [...num1, ...num2];
 // console.log(combined);
 
 
-
-// let greet = "Hello";
+//  let greet = "Hello";
 // console.log([...greet]) // ["H", "e", "l", "l", "o"]
+
+
+
+
+
+// // Parent class
+// class Animal {
+//     constructor(name) {
+//         this.name = name;
+//     }
+
+//     eat() {
+//         console.log(`${this.name} is eating.`);
+//     }
+// }
+
+// // Child class
+// class Dog extends Animal {
+//     constructor(name, breed) {
+//         super(name); // Calls the parent class constructor
+//         this.breed = breed;
+//     }
+
+//     bark() {
+//         console.log(`${this.name} is barking! Woof Woof!`);
+//     }
+// }
+
+// // Usage example
+// const myDog = new Dog("Buddy", "Golden Retriever");
+
+// myDog.eat(); // Inherited from Animal class
+// myDog.bark(); // Defined in Dog class
+
+// console.log(`${myDog.name} is a ${myDog.breed}.`); // Accessing properties
+
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let newArr = numbers.reverse();
+// console.log(newArr);
+// console.log(numbers);
+
+
+// // Asynchronous JavaScript
+// {
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+// }
+
+// {
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+//     console.log("Hello World!");
+// }
+
+
+// 
+
+
+
+function meetShakil() {
+    return new Promise((resolve, reject) => {
+        let condition = "healthy"; // Change this to "emergency" or "health issue" to test different scenarios
+
+        setTimeout(() => {
+            if (condition === "healthy") {
+                resolve("Meeting Shakil tomorrow!");
+            } else if (condition === "health issue") {
+                reject("Cannot meet Shakil due to my health issue.");
+            } else (condition === "emergency") {
+                reject("Cannot meet Shakil due to emergency work.");
+            }
+        }, 5000); // 5000 milliseconds delay
+    });
+}
+
+meetShakil().then(message => {
+    console.log(message);
+    console.log("Meeting Shakil was successful!");
+}).catch(error => {
+    console.log(error);
+});
+
+    
