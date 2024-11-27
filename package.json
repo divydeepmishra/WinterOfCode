@@ -1,0 +1,15 @@
+{
+  "name": "divy",
+  "version": "1.0.0",
+  "description": "day1",
+  "main": "1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "main": "node 1.js",
+    "divy": "node divy.js",
+    "start": "node start.js"
+  },
+  "author": "divy",
+  "license": "ISC",
+  "keywords": []
+}

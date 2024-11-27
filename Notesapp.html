@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes_App</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(120deg, #3498db, #8e44ad);
+            color: #10175d;
+            padding-top: 4%;
+            padding-left: 10%;
+        }
+        .container h1{
+            display: flex;
+            align-items: center;
+            font-size: 35px;
+            font-weight: 600;
+        }
+        button{
+            display: flex;
+            padding: 15px 25px;
+            font-size: 16px;
+            background: linear-gradient(60deg, #9418fd, #571094);
+            color: #fff;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 30px 0 20px;
+        }
+        .input-box{
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            min-height: 150px;
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            outline: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Notes</h1>
+        <button>Create Notes </button>
+        <div class="notes_container">
+            <p contenteditable="true" class="input-box">
+               
+            </p>
+        </div>
+         
+    </div>
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            const notesContainer = document.querySelector('.notes_container');
+            const newNote = document.createElement('p');
+            newNote.classList.add('input-box');
+            newNote.contentEditable = true;
+            newNote.innerText = 'New Note';
+            notesContainer.appendChild(newNote);
+        });
+    </script>
+</body>
+</html>

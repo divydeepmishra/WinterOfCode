@@ -35,6 +35,7 @@
 // console.log(data4);
 // console.log(data5);
 
+
 // console.log(typeof data1);
 // console.log(typeof data2);
 // console.log(typeof data3);
