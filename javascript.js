@@ -448,14 +448,14 @@
 
 function meetShakil() {
     return new Promise((resolve, reject) => {
-        let condition = "healthy"; // Change this to "emergency" or "health issue" to test different scenarios
+        let condition = "emergency"; // Change this to "emergency" or "health issue" to test different scenarios
 
         setTimeout(() => {
             if (condition === "healthy") {
                 resolve("Meeting Shakil tomorrow!");
             } else if (condition === "health issue") {
                 reject("Cannot meet Shakil due to my health issue.");
-            } else (condition === "emergency") {
+            } else if (condition === "emergency") {
                 reject("Cannot meet Shakil due to emergency work.");
             }
         }, 5000); // 5000 milliseconds delay
