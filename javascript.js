@@ -192,7 +192,7 @@
 
 
 
-// This keyword
+// // This keyword
 // const person = {
 //     name: 'Divy',
 //     age: 20,
@@ -446,27 +446,27 @@
 
 
 
-function meetShakil() {
-    return new Promise((resolve, reject) => {
-        let condition = "emergency"; // Change this to "emergency" or "health issue" to test different scenarios
+// function meetShakil() {
+//     return new Promise((resolve, reject) => {
+//         let condition = "emergency"; // Change this to "emergency" or "health issue" to test different scenarios
 
-        setTimeout(() => {
-            if (condition === "healthy") {
-                resolve("Meeting Shakil tomorrow!");
-            } else if (condition === "health issue") {
-                reject("Cannot meet Shakil due to my health issue.");
-            } else if (condition === "emergency") {
-                reject("Cannot meet Shakil due to emergency work.");
-            }
-        }, 5000); // 5000 milliseconds delay
-    });
-}
+//         setTimeout(() => {
+//             if (condition === "healthy") {
+//                 resolve("Meeting Shakil tomorrow!");
+//             } else if (condition === "health issue") {
+//                 reject("Cannot meet Shakil due to my health issue.");
+//             } else if (condition === "emergency") {
+//                 reject("Cannot meet Shakil due to emergency work.");
+//             }
+//         }, 5000); // 5000 milliseconds delay
+//     });
+// }
 
-meetShakil().then(message => {
-    console.log(message);
-    console.log("Meeting Shakil was successful!");
-}).catch(error => {
-    console.log(error);
-});
+// meetShakil().then(message => {
+//     console.log(message);
+//     console.log("Meeting Shakil was successful!");
+// }).catch(error => {
+//     console.log(error);
+// });
 
     
