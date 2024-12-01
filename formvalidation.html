@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        form {
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-field {
+            display: block;
+            margin: 10px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: yellow;
+            color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 255, 0.5);
+        }
+        button:hover {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<form onsubmit="return validateForm()">
+    <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+    </div>
+    <div class="form-field">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function validateForm() {
+        var email = document.getElementById('email').value;
+        var age = document.getElementById('age').value;
+        // Validate Email
+        if (email === '') {
+            alert('Email cannot be empty');
+            return false;
+        }
+        if (!email.includes('@')) {
+            alert('Email must contain "@" symbol');
+            return false;
+        }
+        // Validate Age
+        if (age === '') {
+            alert('Age cannot be empty');
+            return false;
+        }
+        age = parseInt(age);
+        if (age < 18 || age > 60) {
+            alert('Age must be between 18 and 60');
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</body>
+</html>
