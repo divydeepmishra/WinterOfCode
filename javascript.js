@@ -337,7 +337,7 @@
 //     let newObj = Object.assign({}, obj, { newProperty: "newValue" });
 //     console.log("After Object.assign():", newObj);
 
-
+//     let freezeObj = Object.freeze(obj);
 //   }
 
 //   // Example Usage for Object Methods
