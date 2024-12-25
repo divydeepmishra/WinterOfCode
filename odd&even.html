@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Test Form</title>
+    <style>
+        body {
+            background-color: red;
+        }
+        form {
+            background-color: blue;
+            padding: 20px;
+            box-shadow: 10px 10px 5px green;
+            border-radius: 10px;
+        }
+        button {
+            background-color: yellow;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="numberForm">
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" required>
+        <button type="button" onclick="checkNumber()">TEST</button>
+        <div id="result"></div>
+    </form>
+
+    <script>
+        function checkNumber() {
+            const number = document.getElementById('numberInput').value;
+            const resultDiv = document.getElementById('result');
+            if (number % 2 === 0) {
+                resultDiv.textContent = 'The number is even.';
+            }
+            else {
+                resultDiv.textContent = 'The number is odd.';
+            }
+        }
+    </script>
+</body>
+</html>
